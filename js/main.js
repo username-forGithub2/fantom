@@ -37,10 +37,23 @@ const swiperblog = new Swiper('.home-blog-slider', {
 
 });
 
-(function($) {
-  $(function() {
+(function(jQuery) {
+  jQuery(function() {
   
     $('.select select').styler();
   
   });
   })(jQuery);
+
+  let getBurger = document.querySelector(".burger-wrapper")
+  let getOverlay = document.querySelector(".black-overlay")
+  let getClose = document.querySelector(".close")
+  getBurger.addEventListener("click", ()=>{
+    document.querySelector("body").classList.toggle("active")
+  })
+  getOverlay.addEventListener("click", ()=>{
+    document.querySelector("body").classList.remove("active")
+  })
+  getClose.addEventListener("click", ()=>{
+    document.querySelector("body").classList.remove("active")
+  })

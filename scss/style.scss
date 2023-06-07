@@ -130,6 +130,9 @@ nav{
   max-width: 1650px;
   margin-left: 4%;
   margin-right: 4%;
+  .burger-wrapper{
+    cursor: pointer;
+  }
 }
 .lang-wrapper {
   margin-right: 10px;

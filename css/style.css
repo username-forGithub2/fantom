@@ -140,6 +140,9 @@ nav {
   margin-left: 4%;
   margin-right: 4%;
 }
+nav .burger-wrapper {
+  cursor: pointer;
+}
 
 .lang-wrapper {
   margin-right: 10px;

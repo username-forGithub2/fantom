@@ -3451,6 +3451,34 @@ footer{
       }
     }
   }
+  .lang-wrapper {
+    margin-right: 10px;
+    position: relative;
+    select{
+      width: 60px;    
+      background-color: transparent;
+      border: none;
+      color: #fff;
+      font-size: 20px;
+      appearance: none;    
+    }
+    &::after{
+      width: 10px;
+      height: 5px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      content: "";
+      background-image: url(../images/select-button.svg);
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+    &:focus{
+      outline: none;
+    }
+  }
 
   .banner-wrapper{
     background-color: black;

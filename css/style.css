@@ -3335,6 +3335,34 @@ footer .social img {
   nav .top-logo-wrapper img {
     width: 100%;
   }
+  .lang-wrapper {
+    margin-right: 10px;
+    position: relative;
+  }
+  .lang-wrapper select {
+    width: 60px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    appearance: none;
+  }
+  .lang-wrapper::after {
+    width: 10px;
+    height: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: "";
+    background-image: url(../images/select-button.svg);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  .lang-wrapper:focus {
+    outline: none;
+  }
   .banner-wrapper {
     background-color: black;
     height: 100dvh;
